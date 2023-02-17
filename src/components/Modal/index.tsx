@@ -17,7 +17,10 @@ const Modal: FC = () => {
   return (
     <div className="main">
       <h2 className="greeting">Hi, User! :)</h2>
-      <form className="signIn__form">
+      <form
+        className="signIn__form"
+        onSubmit={(event) => event.preventDefault()}
+      >
         <div className="signIn__form-content">
           <label className="signIn__form-label">Email</label>
           <Input
